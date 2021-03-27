@@ -35,6 +35,8 @@ a:visited , a:focus, a:active{
 }
 
 /* || Typography */
+@import url('http://fonts.cdnfonts.com/css/freeway-gothic'); 
+
 h1 {
     font-family: 'Freeway Gothic', Helvetica, sans-serif;
 }
