@@ -16,6 +16,7 @@ section {
 section h2{
     margin: 50px;
 }
+
 section, footer {
     width: 100%;
     text-align: center;
@@ -224,6 +225,65 @@ header > h1 ,span {
 }
 
 
+/* || Contact  */
+
+
+#contact-title{
+    width: 100%;
+    text-align: center;
+    background-color: #b4a5a5;
+    padding-top: 1em;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3em;
+    background: #b4a5a5;
+}
+
+#contact a {
+    color: #000;
+}
+
+#contact div {
+    padding: 35px;
+}
+
+#contact div > form {
+    display: flex;
+    flex-direction: column;
+    width: 25em;
+    font-size: 1.5em;
+    text-align: left;
+}
+
+form > label, input, textarea {
+    margin: 6px 5px;
+    border: 0;
+    padding: 5px;
+}
+
+form > input, textarea {
+    min-height: 3em;
+    font-size: 0.65em;
+}
+
+#contact div > iframe {
+    margin: 25px;
+}
+
+#submit{
+    padding: 10px;
+    background: #301b3f;
+    border: 0;
+    color: #b4a5a5;
+    font-size: 0.65em;
+}
+
+
 /* || Footer  */
 
 footer {
@@ -243,23 +303,47 @@ footer div:nth-child(1) {
     flex-basis: 0;
     flex-grow: 1;
 }
+
 footer div:nth-child(2){
     flex-basis: 0;
     flex-grow: 3;
 }
+
 footer div:nth-child(3){
     flex-basis: 0;
     flex-grow: 1;
 }
 
-@media screen and (max-width: 1111px) {
-    footer {
-      flex-direction: column;
+
+footer a > svg {
+    background: #301b3f;
+    padding: 10px;
+}
+
+@media screen and (max-width: 650px) {
+
+    #contact div > form {
+      font-size: 0.9em;
+      margin: 15px;
+    }
+
+    iframe {
+        max-width: 90%;
     }
 }
 
-footer a {
-    padding: 20px;
-    background: #301b3f;
+@media screen and (max-width: 845px) {
+    header h1 {
+        text-align: center;
+    }
 
+
+@media screen and (max-width: 1111px) {
+    #mission p {
+        max-width: 75%;
+    }
+
+    footer {
+      flex-direction: column;
+    }
 }
