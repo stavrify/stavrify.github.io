@@ -372,13 +372,28 @@ footer a > svg {
 
 @media screen and (max-width: 650px) {
 
+    section h2 {
+        font-size: 2em;
+    }
+
     #contact div > form {
       font-size: 0.9em;
-      margin: 15px;
+    }
+
+    #contact div {
+        padding: 0px!important;
+    }
+
+    form {
+        max-width: 90vw;
+    }
+
+    form > label, input, textarea {
+        max-width: 90vw;
     }
 
     iframe {
-        max-width: 99%;
+        display: none;
     }
     
     #hamburger, #top, #mid, #bottom {
