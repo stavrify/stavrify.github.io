@@ -336,9 +336,6 @@ footer a > svg {
     header h1 {
         text-align: center;
     }
-
-
-@media screen and (max-width: 1111px) {
     #mission p {
         max-width: 75%;
     }
@@ -346,4 +343,4 @@ footer a > svg {
     footer {
       flex-direction: column;
     }
-}
+
