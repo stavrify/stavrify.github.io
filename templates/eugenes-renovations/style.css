@@ -86,7 +86,6 @@ nav a:nth-child(4){transition-delay: 400ms;}
 nav a:nth-child(5){transition-delay: 500ms;}
 
 #hamburger {
-    display: none;
     display: flex;
     flex-direction: column;
     padding: 15px;
@@ -100,10 +99,14 @@ nav a:nth-child(5){transition-delay: 500ms;}
     transition: all 700ms ease;
 }
 
+#hamburger, #top, #mid, #bottom {
+    display: none;
+}
+
 /* Hamburger Icon to "X" transforms" */
 
 .topX {
-    display: none;
+    display: none!important;
 }
 
 .midX {
@@ -378,7 +381,7 @@ footer a > svg {
         max-width: 99%;
     }
     
-    #hamburger {
+    #hamburger, #top, #mid, #bottom {
         display: block;
     }
 
@@ -395,7 +398,7 @@ footer a > svg {
 @media screen and (max-width: 845px) {
     header h1 {
         text-align: center;
-        font-size: 2.2em;
+        font-size: 1.95em;
     }
     #mission p {
         max-width: 75%;
