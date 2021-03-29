@@ -387,6 +387,8 @@ footer a > svg {
 
     nav {
         flex-direction: column;
+        max-width: 100vw;
+        overflow: hidden;
     }
 
     nav a {
