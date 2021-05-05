@@ -13,4 +13,3 @@ Upload directly to your server or implement it through a CMS accordingly to each
 # Typography
 
 The only non-standard font used is 'Freeway Gothic' used in the header. It's free to use both for personal and commercial projects. Font files are inclued as well as the option to load the font through a CDN (Already linked in index.html <head>)
-
