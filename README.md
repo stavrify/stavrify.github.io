@@ -1,2 +1,2 @@
 # stavrify.github.io
-# Under Construction
+# My personal page, aka stavrosga.com
