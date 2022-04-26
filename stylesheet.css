@@ -1,0 +1,151 @@
+html,body {
+    margin: 0;
+    padding: 0;
+}
+ body {
+    font-family: whois, sans-serif;
+    height: 100vh;
+    background: rgb(240, 240, 240);
+ }
+
+ .wrapper {
+    padding: 2em;
+ }
+
+ ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-right: auto;
+ }
+
+ a {
+    text-decoration: none;
+    color: black;
+ }
+ .navy a {
+    padding: 15px;
+    background-color: white;
+ }
+
+ li a {
+    margin-right:  2em;
+ }
+
+ h1 {
+    font-family: 'SF New Republic', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto;
+    font-size: 6.5em;
+    margin-top:  1.5em;
+ }
+
+ .center {
+    width: 100%;
+    background: #1eae98;
+    color: white;
+    text-align: center;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    transform:rotateX(90deg);
+ }
+
+ .group {
+    margin: 3em 0;
+    display: flex;
+ }
+.group > div {
+    flex-basis: 50%;
+}
+
+ .navy {
+    background: #233e8b ;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3em;
+    opacity: 0;
+ }
+ .navy > h2{
+    color: white;
+    font-size: 3em;
+    text-decoration: wavy;
+ }
+
+ h5 {
+     color: white;
+     font-size: 1.5rem;
+     text-align: left;
+     margin: 0;
+ }
+
+.navy a img{
+    height: 3em;
+ }
+
+.thumb {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.pic {
+    padding: 15px;
+}
+
+/* section colors */
+
+ #contact {
+   background-color: #ffffc7 !important;
+   color: #70705c !important;
+ }
+
+ #work {
+   background: #a9f1df !important;
+   color: #233e8b !important;
+ }
+
+/* Page transitions */
+
+ ul.transition {
+     display: flex;
+     position: absolute;
+     z-index: 10;
+     height: 100vh;
+     width: 100%;
+     top: 0;
+     left: 0;
+     margin: 0;
+     pointer-events: none;
+ }
+
+ ul.transition li {
+    transform: scaleY(0);
+    width: 20%;
+}
+
+ul.transition li:nth-child(1n) {
+    background: #233e8b;
+}
+
+ul.transition li:nth-child(2n) {
+    background: #a9f1df;
+}
+
+ul.transition li:nth-child(3n) {
+    background: #ffffc7;
+}
+
+ul.transition li:nth-child(4n) {
+    background: #1eae98;
+}
+
+@media (min-width: 650px) {
+    main {
+        margin-top: 3em;
+        position: relative;
+        z-index: 3;
+    }
+
+    .wrapper {
+        max-width: 1500px;
+        margin: 0 auto;
+    }
+}
