@@ -1,5 +1,5 @@
 var bg;
-var Url = "./assets/sounds/";
+var Url = "treasure-game/assets/sounds/";
 var treasuresfx = "treasure.wav";
 var bg = "bg.mp3";
 var sound = "sfx.mp3";
