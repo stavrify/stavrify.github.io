@@ -18,8 +18,8 @@ function contentAnimation() {
 function afterdiv() {
 
     var tl = gsap.timeline();
-    tl.from('.navy', {duration: 1.5, translateY: 300,opacity: 0, stagger: .2})
-    tl.to('.navy', {translateY: 0,opacity: 1, stagger: .3})
+    tl.from('.navy', {duration: .5, translateY: 300,opacity: 0, stagger: .2})
+    tl.to('.navy', {translateY: 0,opacity: 1, stagger: .2})
 
 }
 
