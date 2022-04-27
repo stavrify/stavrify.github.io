@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geology And Earthquakes Quiz</title>
+    <meta name="Description" CONTENT="Δοκιμάστε τις γνώσεις σας στη γεωλογία και τους σεισμούς μέσα από ένα μικρό κυνήγι θησαυρού. Test your knowledge in geology and earthquakes through this small treasure hunt game. Από Σταύρος Γκάτσης">
+    <link rel="shortcut icon" href="/icons/icons/png/icon.png">
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+</head>
+
+<body> <h1 style="display: none;">Geology And Earthquakes Quiz</h1> <br><br>
+    <script>
+        window.jQuery = window.$ = require('jquery');
+    </script>
+ <!--  <script src="/styles/javascript/jquery-3.3.1.slim.min.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+ -->
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3>Welcome to the island! Answer all the questions correctly to reach the treausre. Click the red star to view each question. Good luck!</h3>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="bgp" class="btn btn-success" data-dismiss="modal">Go!</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <img src="../styles/treasure.svg" class="icon" />
+            </div>
+
+            <div class="col-sm" id="colsm23">
+                <h3>22</h3>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <h1>Question #22</h1><br>
+                    <h2>What is the name of the change in the earth's outer surface due to external forces?</h2><br>
+                    <button type="button" class="btn btn-primary treasureunlock opt54">Corrosion</button>
+                    <button type="button" class="btn btn-primary incorrect opt55">Deposit</button>
+                    <button type="button" class="btn btn-primary incorrect opt56">Disintegration</button>
+                 </div>
+            </div>
+
+            <div class="col-sm" id="colsm22">
+                <h3>21</h3>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <h1>Question #21</h1><br>
+                    <h2>To which category of earth's forces do volcanoes and earthquakes belong?</h2><br>
+                    <button type="button" class="btn btn-primary incorrect opt54">Exogenous</button>
+                    <button type="button" class="btn btn-primary incorrect opt55">Both</button>
+                    <button type="button" class="btn btn-primary correct opt56">Endogenous</button>
+                 </div>
+            </div>
+
+            <div class="col-sm" id="colsm21">
+                <h3>20</h3>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <h1>Question #20</h1><br>
+                    <h2>How many large lithospheric plates are there?</h2><br>
+                    <button type="button" class="btn btn-primary correct opt51">7</button>
+                    <button type="button" class="btn btn-primary incorrect opt52">3</button>
+                    <button type="button" class="btn btn-primary incorrect opt53">5</button>
+                 </div>
+            </div>
+
+            <div class="col-sm" id="colsm20">
+                <h3>19</h3>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <h1>Question #19</h1><br>
+                    <h2>Plates contraction leads to the creation of:</h2><br>
+                    <button type="button" class="btn btn-primary incorrect opt48">A Volcano</button>
+                    <button type="button" class="btn btn-primary incorrect opt49">Nothing</button>
+                    <button type="button" class="btn btn-primary correct opt50">Mountain</button>
+                 </div>
+            </div>
+            
+            <div class="col-sm" id="colsm19">
+                <h3>18</h3>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <h1>Question #18</h1><br>
+                    <h2>An island can be created from a volcanic eruption</h2><br>
+                    <button type="button" class="btn btn-success correct opt46">True</button>
+                    <button type="button" class="btn btn-danger incorrect opt47">False</button>
+                 </div>
+            </div>
+        </div>
+    
+      <div class="row">
+            <div class="col-sm" id="colsm18">
+                <h3>17</h3>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <h1>Question #17</h1><br>
+                    <h2>If you are outdoors during the earthquake you should:</h2><br>
+                    <button type="button" class="btn btn-primary incorrect opt43">Be close to the shore</button>
+                    <button type="button" class="btn btn-primary correct opt44">Move away from the facades of buildings</button>
+                    <button type="button" class="btn btn-primary incorrect opt45">Increase your car's speed</button>
+                 </div>
+            </div>
+
+            <div class="col-sm" id="colsm17">
+                <h3>16</h3>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <h1>Question #16</h1><br>
+                    <h2>Greece is a generally earthquake-prone country.</h2><br>
+                    <button type="button" class="btn btn-success correct opt41">True</button>
+                    <button type="button" class="btn btn-danger incorrect opt42">False</button>
+                 </div>
+            </div>
+
+            <div class="col-sm" id="colsm16">
+                <h3>15</h3>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <h1>Question #15</h1><br>
+                    <h2>Seismologists can accurately predict when an earthquake will occur.</h2><br>
+                    <button type="button" class="btn btn-success incorrect opt39">True</button>
+                    <button type="button" class="btn btn-danger correct opt40">False</button>
+                 </div>
+            </div>
+
+            <div class="col-sm" id="colsm15">
+                <h3>14</h3>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <h1>Question #14</h1><br>
+                    <h2>The word enceladus is used poetically to describe:</h2><br>
+                    <button type="button" class="btn btn-primary incorrect opt36">The Volcano</button>
+                    <button type="button" class="btn btn-primary correct opt37">The Earthquake</button>
+                    <button type="button" class="btn btn-primary incorrect opt38">The Tsunami</button>
+                </div>
+            </div>
+
+            <div class="col-sm" id="colsm14">
+                <h3>13</h3>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <h1>Question #13</h1><br>
+                    <h2>Which rocks formed first?</h2><br>
+                    <button type="button" class="btn  correct opt33"><img src="../styles/stromatawrong.png" class="icobtn" /></button>
+                    <button type="button" class="btn  incorrect opt34"><img src="../styles/stromata.png" class="icobtn" /></button>
+                </div>
+            </div>
+            
+            <div class="col-sm" id="colsm13">
+                <h3>12</h3>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <h1>Question #12</h1><br>
+                    <h2>Where is the crater of the volcano?</h2><br>
+                    <button type="button" class="btn iconbtn correct opt30"><img src="../styles/correctvolcano.png" class="icobtn" /></button>
+                    <button type="button" class="btn iconbtn incorrect opt31"><img src="../styles/volcanowrong.png" class="icobtn" /></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-sm" id="colsm12">
+                    <h3>11</h3>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <h1>Question #11</h1><br>
+                        <h2>What is recommended to do during an earthquake?</h2><br>
+                        <button type="button" class="btn iconbtn incorrect opt27">Run towards the stairs</button>
+                        <button type="button" class="btn iconbtn correct opt28">Patiently wait at a safe space (eg Under an office)</button>
+                        <button type="button" class="btn iconbtn incorrect opt29">Use the elevator to exit the building</button>
+                    </div>
+                </div>
+    
+                <div class="col-sm kleidicontainer" id="colsm11">
+                    <img src="../styles/key.svg" id="kleidi" class="icon" />
+
+                </div>
+    
+                <div class="col-sm" id="colsm10">
+                        <h3>10</h3>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <h1>Question #10</h1><br>
+                            <h2>An earthquake can be caused either by the sliding of lithospheric plates or by the eruption of a volcano.</h2><br>
+                            <button type="button" class="btn btn-success correctkey opt25">True</button>
+                            <button type="button" class="btn btn-danger incorrect opt26">False</button>
+                         </div>
+                </div>
+    
+                <div class="col-sm" id="colsm9">
+                    <h3>9</h3>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <h1>Question #9</h1><br>
+                        <h2>We can predict the eruption of a volcano but we can not predict when an earthquake will occur.</h2><br>
+                        <button type="button" class="btn btn-success correct opt23">True</button>
+                        <button type="button" class="btn btn-danger incorrect opt24">False</button>
+                     </div>
+                </div>
+    
+                <div class="col-sm" id="colsm8">
+                    <h3>8</h3>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <h1>Question #8</h1><br>
+                        <h2>Vapors emitted in volcanic areas are believed to have healing properties.</h2><br>
+                        <button type="button" class="btn btn-success correct opt21">True</button>
+                        <button type="button" class="btn btn-danger incorrect opt22">False</button>
+                     </div>
+                </div>
+                
+                <div class="col-sm" id="colsm7">
+                    <h3>7</h3>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <h1>Question #7</h1><br>
+                        <h2>The cause of the extinction of the Minoan civilization is presumed to have been:</h2><br>
+                        <button type="button" class="btn btn-primary incorrect opt18">A huge earthquake in Crete</button>
+                        <button type="button" class="btn btn-primary correct opt19">The eruption of the volcano of Thera</button>
+                        <button type="button" class="btn btn-primary incorrect opt20">A tsunami</button>
+                     </div>
+                </div>
+            </div>
+        
+          <div class="row">
+                <div class="col-sm" id="colsm1">
+                    <h3>1</h3>
+                        <img data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="../styles/a.svg" class="player"/>
+                        <div class="dropdown-menu">
+                            <h1>Question #1</h1><br>
+                            <h2>When the lithospheric plates collide then:</h2><br>
+                            <button type="button" class="btn btn-primary correct opt1">A Volcano</button>
+                            <button type="button" class="btn btn-primary incorrect opt2">An Earthquake</button>
+                            <button type="button" class="btn btn-primary incorrect opt3">An Island</button>
+
+                        </div>
+                </div>
+    
+                <div class="col-sm" id="colsm2">
+                    <h3>2</h3>
+                        <div class="dropdown-menu">
+                                <h1>Question #2</h1><br>
+                                <h2>Which are the most earthquake-prone areas in Greece?</h2><br>
+                                <button type="button" class="btn btn-primary incorrect opt4">Aegean Islands</button>
+                                <button type="button" class="btn btn-primary incorrect opt5">Peloponese</button>
+                                <button type="button" class="btn btn-primary correct opt6">Ionian Islands</button>
+    
+                        </div>
+                </div>
+    
+                <div class="col-sm" id="colsm3">
+                    <h3>3</h3>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <h1>Question #3</h1><br>
+                        <h2>Where can an earthquake cause problems?</h2><br>
+                        <button type="button" class="btn btn-primary incorrect opt7">On the road network</button>
+                        <button type="button" class="btn btn-primary incorrect">On the rail network</button>
+                        <button type="button" class="btn btn-primary incorrect opt9">In the water supply network</button>
+                        <button type="button" class="btn btn-primary correct opt8">All of the above</button>
+
+                    </div>
+                </div>
+    
+                <div class="col-sm" id="colsm4">
+                    <h3>4</h3>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <h1>Question #4</h1><br>
+                        <h2>To which rocks do basalt and obsidian belong?</h2><br>
+                        <button type="button" class="btn btn-primary incorrect opt10">Transformed</button>
+                        <button type="button" class="btn btn-primary correct opt11">Volcanic</button>
+                        <button type="button" class="btn btn-primary incorrect opt12">Sedimentary</button>
+
+                    </div>
+                </div>
+    
+                <div class="col-sm" id="colsm5">
+                    <h3>5</h3>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <h1>Question #5</h1><br>
+                        <img src="../styles/olistisi.jpg" class="descriptive" />
+                        <h2>When this move happens then<br> we have:</h2><br>
+                        <button type="button" class="btn btn-primary incorrect opt13">A Tsunami</button>
+                        <button type="button" class="btn btn-primary incorrect opt14">A Volcano</button>
+                        <button type="button" class="btn btn-primary correct opt15">An Earthquake</button>
+                    </div>
+                </div>
+                
+                <div class="col-sm" id="colsm6">
+                    <h3>6</h3>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <h1>Question #6</h1><br>
+                        <h2>Greece borders the ____ plate</h2><br>
+                        <button type="button" class="btn btn-primary incorrect opt16">Pacific and Antarctic</button>
+                        <button type="button" class="btn btn-primary incorrect opt17">North and South American</button>
+                        <button type="button" class="btn btn-primary correct opt18">Eurasian and African</button>
+
+                    </div>
+                </div>
+            </div>
+
+            
+</div>
+<script src="../scripts/sounds.js"></script>
+<script src="../scripts/game.js"></script>
+<script>
+
+ $(window).on('load',function(){
+        $('#Modal').modal('show');
+    });
+
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+<footer>
+    <a href="https://www.buymeacoffee.com/stavrosga" target="_blank"><button type="button" class="btn btn-warning">☕️ Buy me a coffee</button> </a>
+    <span><a href="../">Ελληνικά </a> | <span data-toggle="tooltip" data-placement="top" title data-original-title="Some graphics were made by Freepik, Flaticon. Background Music: Lobby Time by Kevin MacLeod (incompetech.com)">&#9432;</span> | A Game From Stavros Gkatsis. | Return to <a href="stavrosga.com">stavrosga.com</a> &nbsp;&nbsp;&nbsp; </span>
+</footer>
+</body>
+</html>

@@ -1,0 +1,123 @@
+body{
+    background-color: #c8e2ff;
+    background-size: 28%;
+    background-repeat: repeat;
+    }
+.col-sm{
+    height:120px;
+    background-color: rgba(223, 223, 223, 0.253);
+    border: 0.5px solid rgba(46, 46, 46, 0.377);
+    text-align:right;
+}
+.player{
+    margin-top: -30px;
+    float: left;
+    z-index: 10000;
+    cursor: pointer;
+}
+.descriptive{
+    border: 0;
+    width: 20vw;
+    height: 14rem;
+}
+.dropdown-menu , .dropdown-menu-right{
+    padding: 50px;
+    background-color: rgb(245, 204, 100);
+    border: 5px solid rgb(255, 183, 0);
+    font-family: "Didact Gothic" !important;
+    width: 850px;
+    transform: translate(0px,0px)!important;
+    position: fixed!important;
+    top: 50%!important;
+    left: 50%!important;
+    margin-top: -235px!important;
+    margin-left: -425px!important;
+    text-align: center;
+}
+.correctico{
+    margin-top: 10px;
+    width: 2.2em;
+}
+.icon{
+    width:6em;
+}
+#kleidi {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+.kleidicontainer{
+    border: 1px dashed gold !important;
+    background: #2a2a2a9c;
+}
+.container{
+    background-image: url("./styles/island.png");
+    box-shadow: 0 0 18px -3px #7c7c7c;
+}
+h1{
+    font-family: "Didact Gothic", sans-serif;
+    text-align: center;
+
+}
+.bravo{
+    padding-top:1em;
+}
+h3{
+    font-family: "Didact Gothic"
+}
+.btn{
+    margin: 2px;
+}
+.alert{
+    top: 25 px;
+    position: fixed;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    text-align: center;
+    width: 80vw;
+    left: 10vw;
+    z-index: 100;
+}
+.keyalert{
+    font-size: 1.2em;
+    top: 5vh;
+    padding: 0 !important;
+    height: 40vh;
+    bottom: 5vh;
+    text-align: center;
+    border: 3px solid #009688;
+    background: #a5efb1;
+}
+.keyalert > img {
+    position: fixed !important;
+    top: 20vh !important;
+    left: 45vw !important;
+}
+.treasureopened{
+    width: 6em;
+    padding-bottom: 1em;
+}
+marquee{
+    padding: 5px;
+    font-family: "Didact Gothic", sans-serif;
+}
+.icobtn{
+    width: 15em;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: right;
+    background-color: #fff;
+    color: #000;
+    width: 100%;
+    overflow: hidden;
+    font-family: Helvetica, Arial;
+    padding: 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

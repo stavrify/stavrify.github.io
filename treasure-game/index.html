@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geology And Earthquakes Quiz</title>
+    <meta name="Description" CONTENT="Δοκιμάστε τις γνώσεις σας στη γεωλογία και τους σεισμούς μέσα από ένα μικρό κυνήγι θησαυρού. Test your knowledge in geology and earthquakes through this small treasure hunt game. Από Σταύρος Γκάτσης">
+    <link rel="shortcut icon" href="/icons/icons/png/icon.png">
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body> <h1 style="display: none;">Geology And Earthquakes Quiz</h1> <br><br>
+    <script>
+        window.jQuery = window.$ = require('jquery');
+    </script>
+ <!--  <script src="/styles/javascript/jquery-3.3.1.slim.min.js"></script>
+    <script src="./node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+ -->
+<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3>Καλωσόρισες στο νησί! Απάντησε σωστά σε όλες τις ερωτήσεις για να φτάσεις στον θησαυρό. Για να εμφανιστεί η ερώτηση, κάνε κλίκ στο κόκκινο αστέρι. Καλή Επιτυχία!</h3>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="bgp" class="btn btn-success" data-dismiss="modal">Πάμε!</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <img src="styles/treasure.svg" class="icon" />
+            </div>
+
+            <div class="col-sm" id="colsm23">
+                <h3>22</h3>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <h1>Ερώτηση #22</h1><br>
+                    <h2>Πως ονομάζεται η αλλαγή της εξωτερικής επιφάνειας της γης που οφείλεται στις εξωγενείς δυνάμεις;</h2><br>
+                    <button type="button" class="btn btn-primary treasureunlock opt54">Διάβρωση</button>
+                    <button type="button" class="btn btn-primary incorrect opt55">Εναπόθεση</button>
+                    <button type="button" class="btn btn-primary incorrect opt56">Αποσάθρωση</button>
+                 </div>
+            </div>
+
+            <div class="col-sm" id="colsm22">
+                <h3>21</h3>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <h1>Ερώτηση #21</h1><br>
+                    <h2>Σε ποιά κατηγορία δυνάμεων της γης ανήκουν τα ηφαίστεια & οι σεισμοί;</h2><br>
+                    <button type="button" class="btn btn-primary incorrect opt54">Εξωγενείς</button>
+                    <button type="button" class="btn btn-primary incorrect opt55">Και στις δύο</button>
+                    <button type="button" class="btn btn-primary correct opt56">Ενδογενείς</button>
+                 </div>
+            </div>
+
+            <div class="col-sm" id="colsm21">
+                <h3>20</h3>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <h1>Ερώτηση #20</h1><br>
+                    <h2>Πόσες είναι οι μεγάλες λιθοσφαιρικές πλάκες;</h2><br>
+                    <button type="button" class="btn btn-primary correct opt51">7</button>
+                    <button type="button" class="btn btn-primary incorrect opt52">3</button>
+                    <button type="button" class="btn btn-primary incorrect opt53">5</button>
+                 </div>
+            </div>
+
+            <div class="col-sm" id="colsm20">
+                <h3>19</h3>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <h1>Ερώτηση #19</h1><br>
+                    <h2>Η απομάκρυνση των πλακών προκαλεί τη δημιουργία:</h2><br>
+                    <button type="button" class="btn btn-primary incorrect opt48">Ηφαιστείου</button>
+                    <button type="button" class="btn btn-primary incorrect opt49">Τίποτα</button>
+                    <button type="button" class="btn btn-primary correct opt50">Βουνού</button>
+                 </div>
+            </div>
+            
+            <div class="col-sm" id="colsm19">
+                <h3>18</h3>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <h1>Ερώτηση #18</h1><br>
+                    <h2>Aπο την έκρηξη ηφαιστείου μπορεί να δημιουργηθεί ένα νησί</h2><br>
+                    <button type="button" class="btn btn-success correct opt46">Σωστό</button>
+                    <button type="button" class="btn btn-danger incorrect opt47">Λάθος</button>
+                 </div>
+            </div>
+        </div>
+    
+      <div class="row">
+            <div class="col-sm" id="colsm18">
+                <h3>17</h3>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <h1>Ερώτηση #17</h1><br>
+                    <h2>Αν κατά την διάρκεια του σεισμού βρίσκεσαι σε εξωτερικό χώρο θα πρέπει:</h2><br>
+                    <button type="button" class="btn btn-primary incorrect opt43">Να βρίσκεσαι κοντά στην ακτή</button>
+                    <button type="button" class="btn btn-primary correct opt44">Να απομακρυνθείς από τις προσόψεις των κτιρίων</button>
+                    <button type="button" class="btn btn-primary incorrect opt45">Να αυξήσεις την ταχύτητα του αυτοκινήτου σου</button>
+                 </div>
+            </div>
+
+            <div class="col-sm" id="colsm17">
+                <h3>16</h3>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <h1>Ερώτηση #16</h1><br>
+                    <h2>Η Ελλάδα είναι μία γενικά σεισμογενής χώρα.</h2><br>
+                    <button type="button" class="btn btn-success correct opt41">Σωστό</button>
+                    <button type="button" class="btn btn-danger incorrect opt42">Λάθος</button>
+                 </div>
+            </div>
+
+            <div class="col-sm" id="colsm16">
+                <h3>15</h3>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <h1>Ερώτηση #15</h1><br>
+                    <h2>Οι σεισμολόγοι μπορούν να προβλέψουν με ακρίβεια πότε θα γίνει ένας σεισμός.</h2><br>
+                    <button type="button" class="btn btn-success incorrect opt39">Σωστό</button>
+                    <button type="button" class="btn btn-danger correct opt40">Λάθος</button>
+                 </div>
+            </div>
+
+            <div class="col-sm" id="colsm15">
+                <h3>14</h3>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <h1>Ερώτηση #14</h1><br>
+                    <h2>Η λέξη εγκέλαδος χρησιμοποιείται ποιητικά για να περιγράψει:</h2><br>
+                    <button type="button" class="btn btn-primary incorrect opt36">Το ηφαίστειο</button>
+                    <button type="button" class="btn btn-primary correct opt37">Το σεισμό</button>
+                    <button type="button" class="btn btn-primary incorrect opt38">Το τσουνάμι</button>
+                </div>
+            </div>
+
+            <div class="col-sm" id="colsm14">
+                <h3>13</h3>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <h1>Ερώτηση #13</h1><br>
+                    <h2>Ποιά είναι τα πετρώματα που σχηματίστηκαν πρώτα;</h2><br>
+                    <button type="button" class="btn  correct opt33"><img src="./styles/stromatawrong.png" class="icobtn" /></button>
+                    <button type="button" class="btn  incorrect opt34"><img src="./styles/stromata.png" class="icobtn" /></button>
+                </div>
+            </div>
+            
+            <div class="col-sm" id="colsm13">
+                <h3>12</h3>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <h1>Ερώτηση #12</h1><br>
+                    <h2>Ποιός είναι ο κρατήρας του ηφαιστείου;</h2><br>
+                    <button type="button" class="btn iconbtn correct opt30"><img src="./styles/correctvolcano.png" class="icobtn" /></button>
+                    <button type="button" class="btn iconbtn incorrect opt31"><img src="./styles/volcanowrong.png" class="icobtn" /></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-sm" id="colsm12">
+                    <h3>11</h3>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <h1>Ερώτηση #11</h1><br>
+                        <h2>Tι συνιστάται να κάνουμε την ώρα του σεισμού;</h2><br>
+                        <button type="button" class="btn iconbtn incorrect opt27">Τρέχουμε προς την σκάλα</button>
+                        <button type="button" class="btn iconbtn correct opt28">Αναμονή σε ασφαλές σημέιο (πχ Κάτω απο γραφείο)</button>
+                        <button type="button" class="btn iconbtn incorrect opt29">Χρησιμοποιούμε τον ανελκυστήρα για έξοδο από το κτίριο</button>
+                    </div>
+                </div>
+    
+                <div class="col-sm kleidicontainer" id="colsm11">
+                    <img src="styles/key.svg" id="kleidi" class="icon" />
+
+                </div>
+    
+                <div class="col-sm" id="colsm10">
+                        <h3>10</h3>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <h1>Ερώτηση #10</h1><br>
+                            <h2>Σεισμός μπορεί να προκληθεί είτε από την ολίσθηση των λιθοσφαιρικών πλακών, είτε από την έκρηξη ενός ηφαιστείου.</h2><br>
+                            <button type="button" class="btn btn-success correctkey opt25">Σωστό</button>
+                            <button type="button" class="btn btn-danger incorrect opt26">Λάθος</button>
+                         </div>
+                </div>
+    
+                <div class="col-sm" id="colsm9">
+                    <h3>9</h3>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <h1>Ερώτηση #9</h1><br>
+                        <h2>Μπορούμε να προβλέψουμε την έκρηξη ενος ηφαιστείου όμως δεν μπορούμε να προβλέψουμε πότε θα γίνει σεισμός.</h2><br>
+                        <button type="button" class="btn btn-success correct opt23">Σωστό</button>
+                        <button type="button" class="btn btn-danger incorrect opt24">Λάθος</button>
+                     </div>
+                </div>
+    
+                <div class="col-sm" id="colsm8">
+                    <h3>8</h3>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <h1>Ερώτηση #8</h1><br>
+                        <h2>Οι υδρατμοί που εκπέμπονται σε ηφαιστειογενείς περιοχές πιστεύεται οτι έχουν θεραπευτικές ιδιότηες.</h2><br>
+                        <button type="button" class="btn btn-success correct opt21">Σωστό</button>
+                        <button type="button" class="btn btn-danger incorrect opt22">Λάθος</button>
+                     </div>
+                </div>
+                
+                <div class="col-sm" id="colsm7">
+                    <h3>7</h3>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <h1>Ερώτηση #7</h1><br>
+                        <h2>Αιτία αφάνισης του μινωικού πολιτισμού εικάζεται ότι υπήρξε:</h2><br>
+                        <button type="button" class="btn btn-primary incorrect opt18">Ένας τεράστιος σεισμός στην Κρήτη</button>
+                        <button type="button" class="btn btn-primary correct opt19">Η έκρηξη του ηφαιστείου της Θήρας</button>
+                        <button type="button" class="btn btn-primary incorrect opt20">Ένα τσουνάμι</button>
+                     </div>
+                </div>
+            </div>
+        
+          <div class="row">
+                <div class="col-sm" id="colsm1">
+                    <h3>1</h3>
+                        <img data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="styles/a.svg" class="player"/>
+                        <div class="dropdown-menu">
+                            <h1>Ερώτηση #1</h1><br>
+                            <h2>Όταν οι λιθοσφαιρικές πλάκες συγκρούονται τότε δημιουργείται:</h2><br>
+                            <button type="button" class="btn btn-primary correct opt1">Ηφαίστειο</button>
+                            <button type="button" class="btn btn-primary incorrect opt2">Σεισμός</button>
+                            <button type="button" class="btn btn-primary incorrect opt3">Νησί</button>
+
+                        </div>
+                </div>
+    
+                <div class="col-sm" id="colsm2">
+                    <h3>2</h3>
+                        <div class="dropdown-menu">
+                                <h1>Ερώτηση #2</h1><br>
+                                <h2>Ποιές είναι οι πιο σεισμογενείς περιοχές της Ελλάδας;</h2><br>
+                                <button type="button" class="btn btn-primary incorrect opt4">Τα νησιά του Αιγαίου</button>
+                                <button type="button" class="btn btn-primary incorrect opt5">Η Πελοπόννησος</button>
+                                <button type="button" class="btn btn-primary correct opt6">Τα νησιά του Ιονίου</button>
+    
+                        </div>
+                </div>
+    
+                <div class="col-sm" id="colsm3">
+                    <h3>3</h3>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <h1>Ερώτηση #3</h1><br>
+                        <h2>Που μπορεί να προκαλέσει προβλήματα ένας σεισμός;</h2><br>
+                        <button type="button" class="btn btn-primary incorrect opt7">Στο οδικό δικτύο</button>
+                        <button type="button" class="btn btn-primary incorrect">Στο σιδηροδρομικό δικτύο</button>
+                        <button type="button" class="btn btn-primary incorrect opt9">Στο δίκτυο ύδρευσης</button>
+                        <button type="button" class="btn btn-primary correct opt8">Σε όλα τα προηγούμενα</button>
+
+                    </div>
+                </div>
+    
+                <div class="col-sm" id="colsm4">
+                    <h3>4</h3>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <h1>Ερώτηση #4</h1><br>
+                        <h2>Σε ποια πετρώματα ανήκουν ο βασάλτης και ο οψιδιανός;</h2><br>
+                        <button type="button" class="btn btn-primary incorrect opt10">Μεταμορφωμένα</button>
+                        <button type="button" class="btn btn-primary correct opt11">Ηφαιστειακά</button>
+                        <button type="button" class="btn btn-primary incorrect opt12">Ιζηματογενή</button>
+
+                    </div>
+                </div>
+    
+                <div class="col-sm" id="colsm5">
+                    <h3>5</h3>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <h1>Ερώτηση #5</h1><br>
+                        <img src="./styles/olistisi.jpg" class="descriptive" />
+                        <h2>Όταν συμβαίνει αυτή η κίνηση τότε<br> έχουμε:</h2><br>
+                        <button type="button" class="btn btn-primary incorrect opt13">Τσουνάμι</button>
+                        <button type="button" class="btn btn-primary incorrect opt14">Ηφαίστειο</button>
+                        <button type="button" class="btn btn-primary correct opt15">Σεισμό</button>
+                    </div>
+                </div>
+                
+                <div class="col-sm" id="colsm6">
+                    <h3>6</h3>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <h1>Ερώτηση #6</h1><br>
+                        <h2>Η Ελλάδα βρίσκεται κοντά στα σύνορα της ____ πλάκας</h2><br>
+                        <button type="button" class="btn btn-primary incorrect opt16">Ειρηνικής και Ανταρκτικής</button>
+                        <button type="button" class="btn btn-primary incorrect opt17">Βορειοαμερικανικής και Νοτιοαμερικανικής</button>
+                        <button type="button" class="btn btn-primary correct opt18">Ευρασιατικής και Αφρικανικής</button>
+
+                    </div>
+                </div>
+            </div>
+
+            
+</div>
+<script src="/scripts/sounds.js"></script>
+<script src="/scripts/game.js"></script>
+<script>
+
+ $(window).on('load',function(){
+        $('#Modal').modal('show');
+    });
+
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+<footer>
+    <a href="https://www.buymeacoffee.com/stavrosga" target="_blank"><button type="button" class="btn btn-warning">☕️ Buy me a coffee</button> </a>
+    <span><a href="/en/">English </a> | <span data-toggle="tooltip" data-placement="top" title data-original-title="Some graphics were made by Freepik, Flaticon. Background Music: Lobby Time by Kevin MacLeod (incompetech.com)">&#9432;</span> | A Game From Stavros Gkatsis. | Return to <a href="stavrosga.com">stavrosga.com</a> &nbsp;&nbsp;&nbsp; </span>
+</footer>
+</body>
+</html>
