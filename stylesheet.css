@@ -28,6 +28,10 @@ html,body {
     background-color: white;
  }
 
+ #contactlink {
+    background-color: #00000000 !important;
+ }
+
  li a {
     margin-right:  2em;
  }
@@ -56,7 +60,20 @@ html,body {
     flex-basis: 50%;
 }
 
- .navy {
+#contactsec{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contactsec h2 {
+    width: 100%;
+}
+
+#contactsec:not(:first-child) {
+    flex: 1;
+  }
+
+.navy {
     background: #233e8b ;
     align-items: center;
     justify-content: center;
@@ -64,7 +81,8 @@ html,body {
     padding: 3em;
     opacity: 0;
  }
- .navy > h2{
+
+.navy > h2{
     color: white;
     font-size: 3em;
     text-decoration: wavy;
@@ -95,6 +113,19 @@ html,body {
  #contact {
    background-color: #ffffc7 !important;
    color: #70705c !important;
+ }
+ #contactsec, #contactsec > h2{
+    background-color: #ffffc7 !important;
+    color: #70705c !important;
+ }
+ #contactsec > div {
+    padding: 15px;
+    background-color: #70705c;
+ }
+
+ #contact h2 {
+    color: #70705c !important;
+    font-weight: bolder;
  }
 
  #work {
