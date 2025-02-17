@@ -203,6 +203,6 @@
     $('body').css("background", "url(../styles/confetti.gif)");
     $(".container").css("border-radius", "1em");
     $(".container").css("background", "#e8ffff");
-    // $(".container").html("<h1 class=bravo>Συγχαρητήρια!&nbsp;  Άνοιξες Με Επιτυχία Tον Θησαυρό! <br> <img src=./styles/treasureopened.svg class=treasureopened> </h1> <marquee>Δημιουργήθηκε από: Σταύρος Γκάτσης , Κάποια γραφικά έχουν ως πηγή τα: <a href=Freepik.com>Freepik</a> , <a href=Flaticon.com >Flaticon.com</a> . ©2019 </marquee>");
+    $(".container").html("<h1 class=bravo>Συγχαρητήρια!&nbsp;  Άνοιξες Με Επιτυχία Tον Θησαυρό! <br> <img src=./styles/treasureopened.svg class=treasureopened> </h1> <marquee>Κάποια γραφικά έχουν ως πηγή τα: <a href=Freepik.com>Freepik</a> , <a href=Flaticon.com >Flaticon.com</a> . ©2019 </marquee>");
     new Audio(Url + treasuresfx).play();
 });
